@@ -1,8 +1,12 @@
+// Декларативный
 import logo from './logo.svg';
 import './App.css';
+import { getDateYear } from './Date.js';
 
+// Императивный
 export const App = () => {
 	return (
+		// Декларативный
 		<div className="App">
 			<header className="App-header">
 				<img src={logo} className="App-logo" alt="logo" />
@@ -17,6 +21,7 @@ export const App = () => {
 				>
 					Learn React
 				</a>
+				<div className="date">{getDateYear()}</div>
 			</header>
 		</div>
 	);
